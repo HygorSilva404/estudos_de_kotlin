@@ -82,7 +82,11 @@ fun main() {
     println("A soma das listas verdes e vermelha é ${numVerdes.count() + numVermelhos.count()}")
 
     val suporte = setOf("HTTP", "HTTPS", "FTP")
-    val suporteSolicitado = "SMTP"
-    val isSuporte = 1
-    println(isSuporte)
+    val suporteSolicitado = "https"
+    val isSuporte = suporte.contains(suporteSolicitado.uppercase())
+    println("suporte para $suporteSolicitado: $isSuporte")
+
+    val num2Palavra = mutableMapOf(1 to "um", 2 to "dois", 3 to "três")
+    val num = 2
+    println("$num é escrito como ${num2Palavra[num]}")
 }
