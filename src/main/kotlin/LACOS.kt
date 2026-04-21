@@ -21,8 +21,9 @@ fun main(){
         println("Que delicia, é um bolo de $sabores\n")
     }
     //While
-    val bolosComidos = 0
+    var bolosComidos = 0
     while (bolosComidos < 3){
         println("Coma um bolo")
+        bolosComidos++
     }
 }
